@@ -1,4 +1,27 @@
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px 200px);
+  display: flex;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, 250px);
+  justify-content: center;
+  margin: 0 auto;
+}
+.my-masonry-grid {
+  display: flex;
+  margin-left: 20px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 20px; /* gutter size */
+  background-clip: padding-box;
+}
+img {
+  margin-bottom: 40px;
+  border-radius: 15px;
+  width: 230px;
+  cursor: zoom-in;
+  background-color: lightgray;
+}
+img:hover {
+  filter: opacity(0.9);
 }
